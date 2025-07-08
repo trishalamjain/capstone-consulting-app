@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Lightbulb, Target, Users, Zap, ArrowRight, Star } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 
 
@@ -105,7 +106,7 @@ export default function Component1() {
             <div className="container max-w-4xl mx-auto">
               <p className="text-l text-black font-medium leading-7">
               A capstone project is so much more than a school requirement. 
-              It's the most effective way to
+              It&apos;s the most effective way to
               <span className="bg-purple-100 px-2 py-1 border border-black font-bold mx-2">
               strategically differentiate yourself in a competitive applicant pool.</span>
               While grades and scores tell part of your story, your capstone reveals your unique passions and undeniable potential.
@@ -584,7 +585,7 @@ export default function Component1() {
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-stretch md:space-x-12"> {/* Changed items-start to items-stretch */}
 
             <div className="md:w-1/4 flex-shrink-0 mb-12 md:mb-0 flex items-center justify-center ">
-              <img
+              <Image
                 src="/headshot.jpeg" 
                 alt="Trishala Jain Headshot"
                 className="w-full h- object-cover border-4 border-black shadow-lg " // w-full, h-96 for rectangular shape
