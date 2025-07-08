@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Lightbulb, Target, Users, Zap, ArrowRight, Star } from "lucide-react"
 import Link from "next/link"
 import { useState, useEffect } from "react"
-import CollegesCraveParticles from "./colleges-crave-particles"
 
 
 export default function Component1() {
@@ -588,7 +587,7 @@ export default function Component1() {
               <img
                 src="/headshot.jpeg" 
                 alt="Trishala Jain Headshot"
-                className="w-full h-80 object-cover border-4 border-black shadow-lg " // w-full, h-96 for rectangular shape
+                className="w-full h- object-cover border-4 border-black shadow-lg " // w-full, h-96 for rectangular shape
               />
             </div>
 
@@ -648,7 +647,7 @@ export default function Component1() {
 
               {/* Content of the CTA section - z-index 10 to ensure it's above the backgrounds */}
               <div className="container mx-auto px-4 text-center relative z-10">
-                <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent tracking-tight">
+                <h2 className="text-4xl md:text-6xl text-black font-black mb-6 tracking-tight">
                   READY TO BUILD YOUR STORY?
                 </h2>
                 <p className="text-xl font-light mb-8 text-black max-w-2xl mx-auto leading-tight tracking-tight">
