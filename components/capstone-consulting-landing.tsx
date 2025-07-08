@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Lightbulb, Target, Users, Zap, ArrowRight, Star } from "lucide-react"
 import Link from "next/link"
-import { useState, useEffect } from "react"
+
 
 
 export default function Component1() {
@@ -48,7 +48,7 @@ export default function Component1() {
           <div className="container max-w-2xl mx-auto mb-12">
             <p className="text-l md:text-xl text-black font-medium leading-7">
 
-            Most counselors refine what's already there. We empower
+            Most counselors refine what&apos;s already there. We empower
             students to build a unique, impactful project that
               <span className="bg-blue-100 px-2 py-1 ml-2 border font-bold border-black border-1 border-rounded leading-relaxed">transforms their profile and impresses admissions.</span>
             </p>
@@ -158,7 +158,7 @@ export default function Component1() {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-6xl font-black mb-5 tracking-tight">PAST PROJECTS</h2>
               <p className="container px-10 text-l font-medium text-white opacity-90">
-                Explore the projects I've built, launched, and led, shaping my college admissions path and boosting my clients' results.
+                Explore the projects I&apos;ve built, launched, and led, shaping my college admissions path and boosting my clients&apos; results.
               </p>
             </div>
 
@@ -267,7 +267,7 @@ export default function Component1() {
                     <div>
                     <div className="font-black text-lg mb-2">STEM Mentorship Program</div>
                     <p className="opacity-90 text-sm ">
-                    Provided strategic development and operational oversight for a client's STEM mentorship initiative, successfully connecting students with industry professionals
+                    Provided strategic development and operational oversight for a client&apos;s STEM mentorship initiative, successfully connecting students with industry professionals
                     </p>
                   </div>
                   </div>
@@ -293,7 +293,7 @@ export default function Component1() {
                 <div className="text-2xl font-black text-blue-600">UC</div>
               </div>
               <h3 className="text-lg font-black mb-4 leading-none">ALL UC SCHOOLS</h3>
-              <p className="text-gray-700 font-light text-sm">+ UC Berkeley's prestigious M.E.T. Program</p>
+              <p className="text-gray-700 font-light text-sm">+ UC Berkeley&apos;s prestigious M.E.T. Program</p>
             </div>
 
             <div className="border-2 border-black bg-white p-8 text-center">
@@ -593,10 +593,10 @@ export default function Component1() {
 
             <div className="md:w-2/3 text-center md:text-left">
               <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-4 tracking-tight">
-                HI, I'M TRISHALA!
+                HI, I&apos;M TRISHALA!
               </h2>
               <p className="text-xl text-black font-light leading-tight mb-8">
-                I'm dedicated to empowering students and families on their journey to top universities.
+                I&apos;m dedicated to empowering students and families on their journey to top universities.
               </p>
 
               <div className="space-y-6 text-black">
@@ -605,7 +605,7 @@ export default function Component1() {
                   <div>
                     <p className="text-lg font-bold mb-1 text-left">UC Berkeley MET Alum & Student Board President</p>
                     <p className="font-light opacity-90 text-left">
-                      Proud grad of UC Berkeley's prestigious MET Program, where I honed my leadership as Student Board President (2023-2024) and VP of Admissions & Marketing (2022-2023).
+                      Proud grad of UC Berkeley&apos;s prestigious MET Program, where I honed my leadership as Student Board President (2023-2024) and VP of Admissions & Marketing (2022-2023).
                     </p>
                   </div>
                 </div>
@@ -623,7 +623,7 @@ export default function Component1() {
                   <div>
                     <p className="text-lg font-bold mb-1 text-left">AI Startup Co-Founder (Backed by Mayfield Fund & Unusual Ventures)</p>
                     <p className="font-light opacity-90 text-left">
-                      AI-first enterprise L&D platform backed by Mayfield Fund and Unusual Ventures. I've built ventures from concept to funding.
+                      AI-first enterprise L&D platform backed by Mayfield Fund and Unusual Ventures. I&apos;ve built ventures from concept to funding.
                     </p>
                   </div>
                 </div>
@@ -651,7 +651,7 @@ export default function Component1() {
                   READY TO BUILD YOUR STORY?
                 </h2>
                 <p className="text-xl font-light mb-8 text-black max-w-2xl mx-auto leading-tight tracking-tight">
-                  Every great college application starts with understanding your unique strengths. Let's discover yours
+                  Every great college application starts with understanding your unique strengths. Let&apos;s discover yours
                   together in a personalized consultation.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -676,7 +676,7 @@ export default function Component1() {
                   <ArrowRight className="ml-3 w-6 h-6" />
                 </Button>
                 <p className="text-sm text-white mt-6">
-                  Join 100+ students who've transformed their college applications
+                  Join 100+ students who&apos;ve transformed their college applications
                 </p>
 
                 <p className="font-bold text-white text-center mt-8 text-sm opacity-80">
