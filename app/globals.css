@@ -124,3 +124,100 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 400% 400%; /* Make the background larger than the container */
+  animation: gradient-flow 10s ease infinite; /* Apply the animation */
+}
+
+.fade-in-mask-top-1 {
+  /* This creates a much smoother vertical fade-in from top to bottom */
+  /* The black color implies full opacity in the mask */
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,      /* Starts fully transparent at the very top */
+    black 20%,           /* Gradually fades to full opacity by 30% of the element's height */
+    black 50%,           /* Stays fully opaque (black) from 30% to 70% */
+    transparent 8%     /* Gradually fades back to transparent from 70% to 100% */
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 70%,
+    transparent 100%
+  );
+
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+}
+
+.fade-in-mask-top-2 {
+  /* This creates a much smoother vertical fade-in from top to bottom */
+  /* The black color implies full opacity in the mask */
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,      /* Starts fully transparent at the very top */
+    black 35%,           /* Gradually fades to full opacity by 30% of the element's height */
+    black 65%,           /* Stays fully opaque (black) from 30% to 70% */
+    transparent 80%     /* Gradually fades back to transparent from 70% to 100% */
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    blue 48%,
+    blue 52%,
+    blue 100%
+  );
+
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+}
+
+.transition-from-blue-50-to-blue-600 {
+  /* Fades from the blue-50 color to blue-600 */
+  background: linear-gradient(
+    to bottom,
+    #eff6ff 0%,     /* Tailwind's blue-50 */
+    #c7d1e5 5%    /* Tailwind's blue-600 */
+  );
+  /* You can adjust the percentages if you want a faster or slower fade */
+  /* For example, 'black 50%, black 100%' would make it fully black halfway through */
+}
+
+@keyframes marquee-left-to-right-repeat {
+  0% { transform: translateX(-50%); } /* Start with the second half of the content visible on the left */
+  100% { transform: translateX(0%); }   /* Move to the original position, making the first half visible and ready to loop */
+}
+
+/* Apply this class to the actual scrolling div */
+.animate-marquee-banner {
+  animation: marquee-left-to-right-repeat 20s linear infinite; /* Adjust '20s' for speed */
+  white-space: nowrap; /* Ensures text stays on one line */
+  /* Ensure the parent container has overflow-hidden */
+}
+
+@keyframes horizontal-gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* This class will apply the horizontal animation to a background layer */
+.animated-horizontal-gradient {
+  animation: horizontal-gradient-flow 15s ease infinite; /* Adjust duration as needed */
+  background-size: 400% 100%; /* Make it wide for the animation */
+  background-repeat: no-repeat;
+}
