@@ -13,8 +13,8 @@ export default function Component1() {
       {/* Header */}
       <header className="container mx-auto px-4 py-8">
         <nav className="flex items-center justify-between">
-          <div className="text-2xl font-ins-serif font-black bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-            Crato Education
+          <div className="text-4xl font-ins-serif font-black bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            CRATO
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <Link href="#why" className="text-black hover:text-blue-600 transition-colors font-medium">
@@ -47,11 +47,11 @@ export default function Component1() {
           </h1>
 
           <div className="container max-w-2xl mx-auto mb-12">
-            <p className="text-l md:text-xl text-black font-medium leading-7">
+            <p className="text-l md:text-xl text-black font-medium leading-snug">
 
             Most counselors refine what&apos;s already there. We empower
             students to build a unique, impactful project that
-              <span className="bg-blue-100 px-2 py-1 ml-2 border font-bold border-black border-1 border-rounded leading-relaxed">transforms their profile and impresses admissions.</span>
+              <span className="bg-blue-200 px-2 py-1 ml-2 border font-bold border-rounded leading-relaxed">transforms their profile and impresses admissions.</span>
             </p>
           </div>
 
@@ -104,10 +104,10 @@ export default function Component1() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-black text-black mb-6 tracking-tight">WHY DO A CAPSTONE?</h2>
             <div className="container max-w-4xl mx-auto">
-              <p className="text-l text-black font-medium leading-7">
+              <p className="text-l text-black font-medium tracking-tight leading-normal px-7">
               A capstone project is so much more than a school requirement. 
               It&apos;s the most effective way to
-              <span className="bg-purple-100 px-2 py-1 border border-black font-bold mx-2">
+              <span className="bg-purple-200 px-2 py-1  font-bold">
               strategically differentiate yourself in a competitive applicant pool.</span>
               While grades and scores tell part of your story, your capstone reveals your unique passions and undeniable potential.
               Through a powerful capstone, you will:
@@ -588,6 +588,8 @@ export default function Component1() {
               <Image
                 src="/headshot.jpeg" 
                 alt="Trishala Jain Headshot"
+                width={800} // Intrinsic width
+                height={1200} // Intrinsic height
                 className="w-full h- object-cover border-4 border-black shadow-lg " // w-full, h-96 for rectangular shape
               />
             </div>
