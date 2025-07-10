@@ -4,10 +4,12 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Lightbulb, Target, Users, Zap, ArrowRight, Star } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import ServicesConstellation from "./services-constellation"
 
 
 
 export default function Component1() {
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header */}
@@ -327,205 +329,20 @@ export default function Component1() {
       </section>
 
       {/* Services Section */}
-      <section className="bg-gray-50 py-30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">SERVICES</h2>
-              <p className="container px-4 md:px-16 lg:px-24 xl:px-28 text-l text-black font-medium">
-              Receive comprehensive support for your capstone project, from refining your initial idea to effectively incorporating it into your college application. Services include:
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="border-2 border-black bg-white p-8">
-                <div className="w-16 h-16 bg-blue-100 border-2 border-black mb-6 flex items-center justify-center">
-                  <Lightbulb className="w-8 h-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-black mb-4">PROJECT IDEATION</h3>
-                <p className="text-black font-medium mb-4">
-                  Brainstorm and develop unique project ideas that align with your interests and college goals
-                </p>
-                <ul className="text-black text-sm font-light text-left mt-4 space-y-2">
-                  <li className="flex items-start"> {/* Use flexbox to align the star and text horizontally */}
-                    <Star className="w-3 h-3 text-blue-600 mr-2 flex-shrink-0 mt-1" /> {/* Adjust w-4 h-4 for tiny size, text-purple-600 for color */}
-                    <span>Interest assessment & goal mapping</span> {/* Wrap text in span for clearer separation */}
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-blue-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Market research & feasibility analysis</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-blue-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Competitive advantage identification</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="border-2 border-black bg-white p-8">
-                <div className="w-16 h-16 bg-purple-100 border-2 border-black mb-6 flex items-center justify-center">
-                  <Target className="w-8 h-8 text-purple-600" />
-                </div>
-                <h3 className="text-xl font-black mb-4">PROJECT EXECUTION</h3>
-                <p className="text-black font-medium mb-4">
-                  Step-by-step guidance to bring your capstone project from concept to completion
-                </p>
-
-                <ul className="text-black text-sm font-light text-left mt-4 space-y-2">
-                  <li className="flex items-start"> {/* Use flexbox to align the star and text horizontally */}
-                    <Star className="w-3 h-3 text-purple-600 mr-2 flex-shrink-0 mt-1" /> {/* Adjust w-4 h-4 for tiny size, text-purple-600 for color */}
-                    <span>Timeline & milestone planning</span> {/* Wrap text in span for clearer separation */}
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-purple-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Resource identification & networking</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-purple-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Progress tracking & accountability</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="border-2 border-black bg-white p-8">
-                <div className="w-16 h-16 bg-blue-100 border-2 border-black mb-6 flex items-center justify-center">
-                  <Users className="w-8 h-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-black mb-4">1-ON-1 MENTORSHIP</h3>
-                <p className="text-black font-medium mb-4">
-                  Connect with college students from top universities to maximize your growth 
-                </p>
-
-                <ul className="text-black text-sm font-light text-left mt-4 space-y-2">
-                  <li className="flex items-start"> {/* Use flexbox to align the star and text horizontally */}
-                    <Star className="w-3 h-3 text-blue-600 mr-2 flex-shrink-0 mt-1" /> {/* Adjust w-4 h-4 for tiny size, text-purple-600 for color */}
-                    <span>Peer matching & collaboration</span> {/* Wrap text in span for clearer separation */}
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-blue-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Leadership development</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-blue-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Personalized feedback and strategic direction</span>
-                  </li>
-                </ul>
-
-
-                
-              </div>
-
-              <div className="border-2 border-black bg-white p-8">
-                <div className="w-16 h-16 bg-purple-100 border-2 border-black mb-6 flex items-center justify-center">
-                  <Star className="w-8 h-8 text-purple-600" />
-                </div>
-                <h3 className="text-xl font-black mb-4">RESEARCH SUPPORT</h3>
-                <p className="text-black font-medium mb-4">
-                  Academic research guidance including publication and presentation opportunities
-                </p>
-                <ul className="text-black text-sm font-light text-left mt-4 space-y-2">
-                  <li className="flex items-start"> {/* Use flexbox to align the star and text horizontally */}
-                    <Star className="w-3 h-3 text-purple-600 mr-2 flex-shrink-0 mt-1" /> {/* Adjust w-4 h-4 for tiny size, text-purple-600 for color */}
-                    <span>Literature review methodology</span> {/* Wrap text in span for clearer separation */}
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-purple-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Data collection & analysis</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-purple-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Publication & conference submissions</span>
-                  </li>
-                </ul>
-
-
-              </div>
-
-              <div className="border-2 border-black bg-white p-8">
-                <div className="w-16 h-16 bg-blue-100 border-2 border-black mb-6 flex items-center justify-center">
-                  <Zap className="w-8 h-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-black mb-4">VENTURE INCUBATION</h3>
-                <p className="text-gray-700 font-medium mb-4">
-                Launch your own startup or non-profit from concept to early-stage development.
-                </p>
-                <ul className="text-black text-sm font-light text-left mt-4 space-y-2">
-                  <li className="flex items-start"> {/* Use flexbox to align the star and text horizontally */}
-                    <Star className="w-3 h-3 text-blue-600 mr-2 flex-shrink-0 mt-1" /> {/* Adjust w-4 h-4 for tiny size, text-purple-600 for color */}
-                    <span>Business model development</span> {/* Wrap text in span for clearer separation */}
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-blue-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Pitch deck creation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-blue-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Investor introductions</span>
-                  </li>
-                </ul>
-
-
-              </div>
-
-              <div className="border-2 border-black bg-white p-8">
-                <div className="w-16 h-16 bg-purple-100 border-2 border-black mb-6 flex items-center justify-center">
-                  <CheckCircle className="w-8 h-8 text-purple-600" />
-                </div>
-                <h3 className="text-xl font-black mb-4">APPLICATION INTEGRATION</h3>
-                <p className="text-gray-700 font-medium mb-4">
-                  Seamlessly weave your capstone project into compelling college application essays
-                </p>
-
-                <ul className="text-black text-sm font-light text-left mt-4 space-y-2">
-                  <li className="flex items-start"> {/* Use flexbox to align the star and text horizontally */}
-                    <Star className="w-3 h-3 text-purple-600 mr-2 flex-shrink-0 mt-1" /> {/* Adjust w-4 h-4 for tiny size, text-purple-600 for color */}
-                    <span>Essay strategy & storytelling</span> {/* Wrap text in span for clearer separation */}
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-purple-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Activity section optimization</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-3 h-3 text-purple-600 mr-2 flex-shrink-0 mt-1" />
-                    <span>Interview preparation</span>
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-
-
-
-
-          </div>
-        </div>
-
-
-
+      <section>
+      <div>
+      <ServicesConstellation />
+    </div>
       </section>
 
       <div className="mt-0 text-center">
-  {/* The outer div of the banner - now just holds the overflow-hidden */}
-  {/* The max-w-5xl mx-auto is applied to the content *inside* the banner */}
   <div className="relative bg-black text-white border-2 border-black overflow-hidden"> {/* Removed p-8 here */}
-
-    {/* This inner div provides the desired max-width and centering for visual alignment,
-        but DOES NOT clip the scrolling content */}
-    <div className="max-w-5xl mx-auto px-4 py-8"> {/* Added px-4 py-8 for padding that was removed from parent */}
-      {/* This is for the static 'ALL SERVICES INCLUDE' text if it were centered */}
-      {/* In your case, this static content is now part of the scrolling banner.
-          So, this div mainly helps center the *visible window* of the banner. */}
-
-      {/* The actual scrolling content wrapper */}
-      {/* This div needs to be able to stretch as wide as needed for the animation */}
-      <div className="inline-flex space-x-8 animate-marquee-banner py-2">
-
-        {/* Duplicate your content block at least 3 times for a smooth, continuous loop */}
+    <div className="max-w-5xl mx-auto px-4 py-6"> {/* Added px-4 py-8 for padding that was removed from parent */}
+      <div className="inline-flex space-x-5 animate-marquee-banner py-2">
         {[...Array(3)].map((_, i) => (
-          <div key={i} className="flex-shrink-0 text-center px-4">
-            <p className="text-xl font-black mb-2">ALL SERVICES INCLUDE</p>
-            <p className="font-medium opacity-90">
-              Weekly 1-on-1 calls • Resource library • Network introductions • Progress tracking
+          <div key={i} className="flex-shrink-0 text-center px-2">
+            <p className="font-light opacity-90">
+              <span className="font-bold">All projects include: </span> Weekly 1-on-1 calls • Resource library • Network introductions • Progress tracking
             </p>
           </div>
         ))}
