@@ -1,6 +1,6 @@
 "use client"
 
-import { Star, Award, Briefcase, GraduationCap } from "lucide-react"
+import { Star, Briefcase, GraduationCap } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 

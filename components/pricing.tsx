@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Check, Clock, TrendingUp, MessageCircle, ArrowRight } from "lucide-react"
+import { Check, Clock, TrendingUp, MessageCircle } from "lucide-react"
 
 export default function PricingSection() {
   return (
