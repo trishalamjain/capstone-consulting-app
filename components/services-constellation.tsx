@@ -149,7 +149,7 @@ export default function ServicesConstellation() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">SERVICES</h2>
+              <h2 className="text-4xl md:text-6xl font-black text-black mb-6 tracking-tight">SERVICES</h2>
               <p className="container px-4 text-l text-black font-medium">
                 Receive comprehensive support for your capstone project, from refining your initial idea to effectively
                 incorporating it into your college application. Services include:

@@ -1,10 +1,12 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Lightbulb, Target, Users, Zap, ArrowRight, Star } from "lucide-react"
+import { Lightbulb, Target, Users, Zap, ArrowRight, Star } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import ServicesConstellation from "./services-constellation"
+import PricingSection from "./pricing"
+import AboutSection from "./about"
 
 
 
@@ -28,12 +30,21 @@ export default function Component1() {
             <Link href="#pricing" className="text-black hover:text-blue-600 transition-colors font-medium">
               Pricing
             </Link>
-            <Button className="bg-blue-600 hover:bg-blue-700 border-2 font-medium font-semibold">Get Started</Button>
+            {/* Get Started Button */}
+<Button
+  asChild
+  className="bg-blue-600 hover:bg-blue-700 border-2 font-medium font-semibold"
+>
+  <a href="https://cal.com/trishala/crato-free-consultation" target="_blank" rel="noopener noreferrer">
+    Get Started
+  </a>
+</Button>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
+      <section className="">
       <section className="container mx-auto px-4 py-20 text-center">
         <div className="max-w-5xl mx-auto">
           <div className="inline-block border-2 border-black bg-white px-4 py-2 mb-8 transform -rotate-0">
@@ -53,24 +64,30 @@ export default function Component1() {
 
             Most counselors refine what&apos;s already there. We empower
             students to build a unique, impactful project that
-              <span className="bg-blue-200 px-2 py-1 ml-2 border font-bold border-rounded leading-relaxed">transforms their profile and impresses admissions.</span>
+              <span className="bg-blue-200 px-2 py-1 ml-2 border font-bold border-rounded rounded-lg leading-relaxed">transforms their profile and impresses admissions.</span>
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white text-md px-10 py-4 transform hover:scale-105 transition-all"
-            >
-              Schedule Free Consultation
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            {/* Schedule Free Consultation Button */}
+<Button
+  size="lg"
+  className="bg-blue-600 hover:bg-blue-700 text-white text-md px-10 py-4 transform hover:scale-105 transition-all"
+  asChild
+>
+  <a href="https://cal.com/trishala/crato-free-consultation" target="_blank" rel="noopener noreferrer">
+    Schedule Free Consultation
+    <ArrowRight className="ml-2 w-5 h-5" />
+  </a>
+</Button>
             <Button
               size="lg"
               variant="outline"
               className="border-2 border-black bg-white hover:bg-gray-100 text-black font-bold text-md px-10 py-4 transform hover:scale-105 transition-all"
             >
-              View Sample Projects
+              <Link href="#services">
+                View Services
+              </Link>
             </Button>
           </div>
         </div>
@@ -99,6 +116,7 @@ export default function Component1() {
           </div>
         </div>
       </section>
+      </section>
 
       {/* Why Capstone Projects Section */}
       <section id="why" className="container mx-auto px-4 py-20">
@@ -109,7 +127,7 @@ export default function Component1() {
               <p className="text-l text-black font-medium tracking-tight leading-normal px-7">
               A capstone project is so much more than a school requirement. 
               It&apos;s the most effective way to
-              <span className="bg-purple-200 px-2 py-1  font-bold">
+              <span className="bg-purple-200 px-2 py-1 border-rounded rounded-lg font-bold">
               strategically differentiate yourself in a competitive applicant pool.</span>
               While grades and scores tell part of your story, your capstone reveals your unique passions and undeniable potential.
               Through a powerful capstone, you will:
@@ -329,7 +347,7 @@ export default function Component1() {
       </section>
 
       {/* Services Section */}
-      <section>
+      <section id="services">
       <div>
       <ServicesConstellation />
     </div>
@@ -353,107 +371,20 @@ export default function Component1() {
 </div>
 
       {/* Pricing */}
-      <section id="pricing" className="bg-purple-100 py-25">
-        <div className="container mx-auto px-10">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-black text-gray-900 pb-10 tracking-tight">PRICING</h2>
-            </div>
+      <section id="pricing" className="">
+  <div>
+    <PricingSection />
+  </div>
+</section>
 
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="border-2 border-black bg-white p-8 text-center">
-                <h3 className="text-2xl font-black mb-4">BASIC</h3>
-                <div className="text-4xl font-black text-blue-600 mb-2">$500+</div>
-                <p className="text-black font-light mb-6">1-month project guidance</p>
-                <p className="text-sm text-black">
-                  Perfect for summer or short-term projects with clear requirements
-                </p>
-              </div>
 
-            {/* MOST POPULAR / PREMIUM Card */}
-            {/* The 'scale-105' is removed from the default state and applied only on hover */}
-            <div className="border-4 border-blue-600 bg-white transform hover:bg-blue-10 p-8 text-center relative transform scale-113 duration-300">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 font-black text-sm rounded-md">
-                MOST POPULAR
-              </div>
-              <h3 className="text-2xl font-black mb-4">PREMIUM</h3>
-              <div className="text-4xl font-black text-blue-600 mb-2">$2000+</div>
-              <p className="text-black font-light mb-6">Multi-month project guidance</p>
-              <p className="text-sm text-black">
-                Best for complex projects requiring ongoing mentorship and support
-              </p>
-            </div>
-
-              <div className="border-2 border-black bg-white p-8 text-center">
-                <h3 className="text-2xl font-black mb-4">CUSTOM</h3>
-                <div className="text-4xl font-black mb-2 text-blue-600">$-$$$</div>
-                <p className="text-black font-light mb-6">Talk to me about your needs!</p>
-                <p className="text-sm text-black">Customized project packages after consultation based on scope</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* About */}
-      {/* About Section - Redesigned */}
-      <section id="about" className="bg-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-stretch md:space-x-12"> {/* Changed items-start to items-stretch */}
-
-            <div className="md:w-1/4 flex-shrink-0 mb-12 md:mb-0 flex items-center justify-center ">
-              <Image
-                src="/headshot.jpeg" 
-                alt="Trishala Jain Headshot"
-                width={800} // Intrinsic width
-                height={1200} // Intrinsic height
-                className="w-full h- object-cover border-4 border-black shadow-lg " // w-full, h-96 for rectangular shape
-              />
-            </div>
-
-            <div className="md:w-2/3 text-center md:text-left">
-              <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-4 tracking-tight">
-                HI, I&apos;M TRISHALA!
-              </h2>
-              <p className="text-xl text-black font-light leading-tight mb-8">
-                I&apos;m dedicated to empowering students and families on their journey to top universities.
-              </p>
-
-              <div className="space-y-6 text-black">
-                <div className="flex items-start">
-                  <Star className="w-6 h-6 text-blue-600 mr-4 flex-shrink-0 mt-1" /> {/* Star Icon */}
-                  <div>
-                    <p className="text-lg font-bold mb-1 text-left">UC Berkeley MET Alum & Student Board President</p>
-                    <p className="font-light opacity-90 text-left">
-                      Proud grad of UC Berkeley&apos;s prestigious MET Program, where I honed my leadership as Student Board President (2023-2024) and VP of Admissions & Marketing (2022-2023).
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Star className="w-6 h-6 text-purple-600 mr-4 flex-shrink-0 mt-1" /> {/* Star Icon */}
-                  <div>
-                    <p className="text-lg font-bold mb-1 text-left">Incoming Associate Product Manager at Google</p>
-                    <p className="font-light opacity-90 text-left">
-                      I bring real-world tech leadership and product development insights directly to my mentorship.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Star className="w-6 h-6 text-green-600 mr-4 flex-shrink-0 mt-1" /> {/* Star Icon */}
-                  <div>
-                    <p className="text-lg font-bold mb-1 text-left">AI Startup Co-Founder (Backed by Mayfield Fund & Unusual Ventures)</p>
-                    <p className="font-light opacity-90 text-left">
-                      AI-first enterprise L&D platform backed by Mayfield Fund and Unusual Ventures. I&apos;ve built ventures from concept to funding.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section id="about" className="">
+        <AboutSection />
       </section>
 
-{/* Final CTA Section - Redesigned with complex gradient */}
+{/* Final CTA Section - Redesigned */}
             {/* Removed fade-in-mask-top-2 as background layers handle the effect */}
             <section className="relative z-10 py-16 text-white"
                      style={{
@@ -488,13 +419,17 @@ export default function Component1() {
                     <span>No commitment required</span>
                   </div>
                 </div>
-                <Button
-                  size="lg"
-                  className="bg-black hover:bg-blue-700 border-2 border-white text-white font-black text-xl px-12 py-6 transform hover:scale-105 transition-all"
-                >
-                  SCHEDULE FREE CONSULTATION
-                  <ArrowRight className="ml-3 w-6 h-6" />
-                </Button>
+                {/* Get Free Consultation Button */}
+<Button
+  size="lg"
+  className="bg-black hover:bg-blue-700 text-white font-black text-xl px-12 py-6 transform hover:scale-105 transition-all"
+  asChild
+>
+  <a href="https://cal.com/trishala/crato-free-consultation" target="_blank" rel="noopener noreferrer">
+    GET FREE CONSULTATION
+    <ArrowRight className="ml-3 w-6 h-6" />
+  </a>
+</Button>
                 <p className="text-sm text-white mt-6">
                   Join 100+ students who&apos;ve transformed their college applications
                 </p>
